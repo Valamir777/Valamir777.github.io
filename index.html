@@ -14,8 +14,7 @@
     Engineering, ">
     <meta name="description" content="Personal Website">
     <meta name="author" content="Benjamin, Taylor, Schaefer-Jackson-Stepanenkov">
-    <meta http-equiv="refresh" content="30">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="180">
     <!-- websideScripts-->
     <script>
         function myFunction() {
@@ -49,14 +48,18 @@
             background-image: url(https://media.tenor.com/IvyuPtEfzhoAAAAM/matrix.gif);
         }
 
-        p, p1{
+        p, .p1{
             background-color: black; color: rgb(7, 192, 7);
         }
 
-        d1, dt, dd {
+        .d1, dt, dd {
             color: rgb(7, 192, 7);
             background-color: black;
             line-height: 1.7em;
+        }
+
+        .icon{
+            width: 120px; height: 120px;
         }
 
         .center{
@@ -85,11 +88,17 @@
         }
         .left{
             float: left;
+            margin-left: 250px;
             width: 20%; /* The width is 20%, by default */
         }
 
+        .farright{
+            float: right;
+            width: 20%;
+        }
         .right{
             float: right;
+            margin-right: 250px;
             width: 20%;
         }
 
@@ -109,7 +118,7 @@
 <!--A little information about me-->
     <header id="VIPheader">
         <strong>Taylor Benjamin Schaefer-Jackson-Stepanenkov</strong><br>
-        Agricultural Data Scientist & Software Developer, Logistics & Farm Manager, Bioresource Engineer<br>
+        Executive President Midian Corperation<br>
     </header>
 </head>
 <!-- -->
@@ -117,12 +126,12 @@
 <!-- -->
 <body name="about_me">
     <img src="https://everipedia-storage.s3.amazonaws.com/ProfilePicture/en/taylor-jackson/1580125__76894.jpeg" 
-    alt="My ProfilePicture Has Failed To Load" width="150" height="325" title="Did you know I climbed mountains, neither did I!" class="right">
-    <h1 class="left"></h1>
-        <p class="left">
+    alt="My ProfilePicture Has Failed To Load" width="150" height="325" title="Did you know I climbed mountains, neither did I!" class="left">
+    <h1></h1>
+        <p class="right">
             <p1><strong>About Me</strong></p1><br>
-            <p1>I am currently working as English as a Second Language teacher. Aspiring Agriculutral Data & Security Analyst, & Amatuer Software/Web Developer.<br>
-                I also teach English as a Second Language online to Russian, Chinese, and Japanese Students grade k-12.</p1><br>
+            <p1>I am currently working as English as a Second Language teacher while I study in Russia. Aspiring Agriculutral Data & Security Analyst, & Amatuer Software/Web Developer.<br>
+                I also teach English as a Second Language online to speakers of Mandarin, Japanese, and Hindi grade k-12.</p1><br>
             <p1>Health is extremely important to me; besides eating health and olympic powerlifting, I thoroughly enjoy<br>
                 competing in Mixed Martial Arts, Bare Knuckling Boxing, Russian Combat Sambo, Muy Thai, Chinese martial arts, and Lethwei</p1><br>
             <p1>Aside from these things in my free time I enjoy Animal Husbandry, Horsebackriding, Backpacking, Horticulture, fidling around with broken farm equipment,
@@ -144,42 +153,49 @@
             <th>
                 Server Side
             </th>
+            <th>
+                Development
+            </th>
         </tr>
         <tr>
-            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Devicon-html5-plain.svg/800px-Devicon-html5-plain.svg.png" alt="HTML" width="120" height="120" title="HTML5"></td>
-            <td><img src="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/community/logos/python-logo-only.png" alt="Python" width="120" height="120" title="Python"></td>
-            <td><img src="https://www.freedownloadlogo.com/logos/n/numpy.svg" alt="Numpy" width="120" height="120" title="Numpy"></td>
-            <td><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" alt="Git" width="120" height="120" title="Git"></td>
-            </tr>
-            <tr>
-            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript" width="120" height="120" title="JavaScript"></td>
-            <td><img src="https://upload.wikimedia.org/wikipedia/ru/3/39/Java_logo.svg" alt="Java" width="120" height="120" title="Java"></td>
-            <td><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/SCIPY_2.svg" alt="SciPy" width="120" height="120" title="SciPy"></td>
-            <td><img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Sql_database_shortcut_icon.png" alt="SQL" width="120" height="120" title="SQL"></td>
-            </tr>
-            <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" width="120" height="120" title="CSS"></td>
-                <td><!-- Placeholder--></td>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" alt="Matplotlib" width="120" height="120" title="Matplotlib"></td>
-                <td><!-- Placeholder--></td>
-            </tr>
-            <tr>
-                <td><!-- Placeholder--></td>
-                
-                <td><!-- Placeholder--></td>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Pandas_mark.svg" alt="Pandas" width="120" height="120" title="Pandas"></td>
-                <td><!-- Placeholder--></td>
-            </tr>
-            <tr>
-                <td><!-- Placeholder--></td>
-                <td><!-- Placeholder--></td>
-                <td><img src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https:%2F%2Fblog.kakaocdn.net%2Fdn%2F4UIIH%2FbtqIH4tfonl%2FLyCOqYkmqKo1gFrogryni1%2Fimg.png" alt="Seaborn" width="120" height="120" title="Seaborn"></td>
-                <td><!-- Placeholder--></td>
-            </tr>
+            <td><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Devicon-html5-plain.svg/800px-Devicon-html5-plain.svg.png" alt="HTML" title="HTML5"></td>
+            <td><img class="icon" src="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/community/logos/python-logo-only.png" alt="Python" title="Python"></td>
+            <td><img class="icon" src="https://www.freedownloadlogo.com/logos/n/numpy.svg" alt="Numpy" title="Numpy"></td>
+            <td><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" alt="Git" title="Git"></td>
+            <td><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Ada_Mascot_with_slogan.svg" alt="ADA" title="ADA"></td>
+        </tr>
+        <tr>
+            <td><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript" title="JavaScript"></td>
+            <td><img class="icon" src="https://upload.wikimedia.org/wikipedia/ru/3/39/Java_logo.svg" alt="Java" title="Java"></td>
+            <td><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/b/b2/SCIPY_2.svg" alt="SciPy" title="SciPy"></td>
+            <td><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Sql_database_shortcut_icon.png" alt="SQL" title="SQL"></td>
+            <td><!-- Placeholder--></td>
+        </tr>
+        <tr>
+            <td><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" title="CSS"></td>
+            <td><!-- Placeholder--></td>
+            <td><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" alt="Matplotlib" title="Matplotlib"></td>
+            <td><!-- Placeholder--></td>
+            <td><!-- Placeholder--></td>
+        </tr>
+        <tr>
+            <td><!-- Placeholder--></td>
+            <td><!-- Placeholder--></td>
+            <td><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/2/22/Pandas_mark.svg" alt="Pandas" title="Pandas"></td>
+            <td><!-- Placeholder--></td>
+            <td><!-- Placeholder--></td>
+        </tr>
+        <tr>
+            <td><!-- Placeholder--></td>
+            <td><!-- Placeholder--></td>
+            <td><img class="icon" src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https:%2F%2Fblog.kakaocdn.net%2Fdn%2F4UIIH%2FbtqIH4tfonl%2FLyCOqYkmqKo1gFrogryni1%2Fimg.png" alt="Seaborn" title="Seaborn"></td>
+            <td><!-- Placeholder--></td>
+            <td><!-- Placeholder--></td>
+        </tr>
     </table>
     <p>Check out my leetcode profile here<a href="https://leetcode.com/Valamir777/">Valamir777 Leetcode Profile</a></p>
     <iframe src="iframes/iframefidget.html" title="myIframe" style="border: none;"></iframe>
-    <nav>
+    <nav class="farright">
         <ul>
             <form action="/action_page.php">
                 <input list="browsers">
