@@ -30,25 +30,43 @@ body {
     margin-top: 20px; /* Optional spacing */
 }
 
-nav {
-    position: relative; /* Ensure the nav is above the overlay */
-    z-index: 2; /* Places nav above the overlay */
-    text-align: center; /* Center the navigation */
+.navbar {
+    background-color: #333; /* Background color for the navbar */
+    position: sticky; /* Makes the navbar stick to the top */
+    top: 0; /* Position it at the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays above other content */
 }
 
-ul {
+.navbar ul {
     list-style-type: none; /* Remove bullet points */
     padding: 0; /* Remove default padding */
+    text-align: center; /* Center the navigation */
+    margin: 0; /* Remove default margin */
+}
+
+.navbar li {
+    display: inline; /* Align items horizontally */
 }
 
 .link {
-    position: relative; /* Ensures the link appears above the overlay */
-    z-index: 3; /* Higher than the overlay */
-    color: blue; /* Link color */
-    text-decoration: underline; /* Underline links */
-    margin: 0 15px; /* Spacing between links */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    padding: 14px 16px; /* Padding around links */
+    display: inline-block; /* Allows padding to work */
 }
 
-/* Other styles remain unchanged */
+.link:hover {
+    background-color: #111; /* Change color on hover */
+}
+
+main {
+    padding: 20px; /* Padding for main content */
+}
+
+section {
+    margin: 50px 0; /* Space between sections */
+    height: 600px; /* Just for demonstration, you can adjust */
+}
+
 

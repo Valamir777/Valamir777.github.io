@@ -6,28 +6,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Metadata-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="agronomy, crop advising, animal genetic advising, breeding services, plant breeding and hybridization, plant genetics, large animal veterinary services, and theriogenology">
-    <meta name="description" content="Website">
-    <meta name="author" content="Benjamin, Taylor, Schaefer-Jackson">
-    <meta http-equiv="refresh" content="180">
-    <title>Great Spirit Agrotech</title>
-    <link rel="icon" type="image/x-icon" href="https://github.com/Valamir777/Valamir777.github.io/tree/main/Images/ghostfavicon.ico?">
-    <link rel="stylesheet" href="styles.css">
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.head.innerHTML += data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+    </script>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body name="homePage">
     <div class="background-image">
         <h1 style="font-size: large;">Welcome</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="link">Home</a></li>
-                <li><a href="about.html" class="link">About</a></li>
-                <li><a href="contact.html" class="link">Contact</a></li>
-            </ul>
-        </nav>
     </div>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" class="link">Home</a></li>
+            <li><a href="about.html" class="link">About</a></li>
+            <li><a href="contact.html" class="link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Add some content sections if needed -->
+        <section>
+            <h2>Section 1</h2>
+            <p>Content for section 1...</p>
+        </section>
+        <section>
+            <h2>Section 2</h2>
+            <p>Content for section 2...</p>
+        </section>
+        <section>
+            <h2>Section 3</h2>
+            <p>Content for section 3...</p>
+        </section>
+    </main>
 </body>
 </html>
+

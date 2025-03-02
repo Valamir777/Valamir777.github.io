@@ -5,37 +5,29 @@
 <!-- big booty bitches are supreme--> 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Metadata-->
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="agronomy, crop advising, animal genetic advising, breeding services, plant breeding and hybridization, plant genetics, large animal veterinary services, and theriogenology">
-    <meta name="description" content=" Website">
-    <meta name="author" content="Benjamin, Taylor, Schaefer-Jackson">
-    <meta http-equiv="refresh" content="180">
-    <!-- websideScripts-->
-    <script>
-        function myFunction() {
-          pass
-        }
-    </script>
-    <!-- Other header Details-->
-    <title>Great Spirit Agrotech</title>
-    <link rel="icon" type="image/x-icon" href="https://github.com/Valamir777/Valamir777.github.io/tree/main/Images/ghostfavicon.ico?">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-    </style>
-<!---->
-</head>
+    <head>
+        <script>
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.head.innerHTML += data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+        </script>
+    </head>
 <!-- -->
 <!-- -->
 <!-- -->
 <body name="homePage">
-    <h1 style="font-size: large;">Welcome</h1>
-    <img src="https://github.com/Valamir777/Valamir777.github.io/blob/c489e3d1812c7e8baf5942081848343f8f845523/Images/Farmer.jpg" alt="Farmer next to bail">
-    <p title="I'm a tooltip">We are glad you've chosen us for your agricultural and veterinary services.</p>
-    <hr>
-    <p> Here is some more about us. <br> some stuff <br> some more stuff<br>that's it!</p>
+    <div class="background-image">
+        <h1 style="font-size: large;">Welcome</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="link">Home</a></li>
+                <li><a href="about.html" class="link">About</a></li>
+                <li><a href="contact.html" class="link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </body>
 </html>
