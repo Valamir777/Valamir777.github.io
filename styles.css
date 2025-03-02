@@ -7,7 +7,7 @@ body {
     background-image: url('https://github.com/Valamir777/Valamir777.github.io/blob/main/Images/Farmer.jpg?raw=true');
     background-size: cover; /* Makes the image cover the entire container */
     background-position: center; /* Centers the image */
-    height: 100vh; /* Full height of the viewport */
+    height: 20vh; /* Full height of the viewport */
     position: relative; /* To position the overlay */
 }
 
@@ -69,4 +69,32 @@ section {
     height: 600px; /* Just for demonstration, you can adjust */
 }
 
+.content-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the main content */
+    align-items: flex-start; /* Align items at the start */
+    max-width: 1200px; /* Optional: Set a max width for larger screens */
+    margin: 0 auto; /* Center the container */
+}
+
+.side-column {
+    width: 20%; /* Set width for side columns */
+    padding: 10px; /* Optional padding */
+}
+
+.main-content {
+    width: 60%; /* Set width for main content */
+    text-align: center; /* Center the main text */
+    padding: 10px; /* Optional padding */
+}
+
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+    .side-column {
+        display: none; /* Hide side columns on mobile devices */
+    }
+
+    .main-content {
+        width: 100%; /* Use full width for main content on mobile */
+    }
+}
 
